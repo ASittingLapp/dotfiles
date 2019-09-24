@@ -26,8 +26,8 @@ function fuz() {
 }
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-alias zc="vim ~/.zshrc"
-alias zsc="source ~/.zshrc"
+alias zc="vim ~/dotfiles/.zshrc"
+alias zsc="~/dotfiles/install/zsh.sh && source ~/.zshrc"
 alias e='open -a Emacs.app'
 
 alias mux='tmuxinator'
@@ -36,6 +36,8 @@ alias vimf='vim $(fuz)'
 alias codef='vscg $(fuz)'
 alias rmf='rm $(fuz)'
 alias ef='e $(fuz)'
+
+alias gcd='git checkout dev'
 
 # Fix python versions
 alias python='python3'
