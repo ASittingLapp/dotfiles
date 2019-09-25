@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/al068190/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set theme
 ZSH_THEME="agnoster"
@@ -68,7 +68,9 @@ export JIRA_DEFAULT_ACTION="branch"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
 
 # add Haskell bins to path
-source $HOME/.ghcup/env
+if [ -f "$HOME/.ghcup/env" ]; then
+    source $HOME/.ghcup/env
+fi
 
 # source work specific config if it exists
 if [ -f ~/.cerner_zshrc ]; then
