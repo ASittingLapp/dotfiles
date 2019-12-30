@@ -11,8 +11,6 @@ plugins=(
   jira
   npm
   osx
-  tmux
-  tmuxinator
   vscode
   web-search
   you-should-use
@@ -29,8 +27,6 @@ function fuz() {
 alias zc="vim ~/dotfiles/.zshrc"
 alias zsc="~/dotfiles/install/zsh.sh && source ~/.zshrc"
 alias e='open -a Emacs.app'
-
-alias mux='tmuxinator'
 
 alias vimf='vim $(fuz)'
 alias codef='vscg $(fuz)'
@@ -77,5 +73,4 @@ if [ -f ~/.cerner_zshrc ]; then
     source ~/.cerner_zshrc
 fi
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$HOME/.local/bin:$PATH:$HOME/.rvm/bin"
+

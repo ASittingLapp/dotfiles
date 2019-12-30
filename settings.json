@@ -27,6 +27,8 @@
     "workbench.colorCustomizations": {
         "[Dracula]": {
             "activityBar.background": "#21222c",
+            "activityBar.activeBorder": "#bd93f9",
+            "activityBar.activeBackground": "#44475a",
         },
     },
     "workbench.colorTheme": "Dracula",
